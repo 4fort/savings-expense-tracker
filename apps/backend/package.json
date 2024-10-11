@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "private": true,
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "nodemon --exec 'ts-node -r tsconfig-paths/register' src/app.ts",
+    "start": "node dist/app.js",
+    "build": "pnpm tsc",
+    "test": "echo 'Add test script here'",
+    "lint": "echo 'Add lint script here'"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "tsconfig-paths": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.5",
+    "concurrently": "^9.0.1",
+    "cors": "^2.8.5",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
